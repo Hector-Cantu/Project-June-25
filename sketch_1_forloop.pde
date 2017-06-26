@@ -30,6 +30,30 @@ fill(150);
 endShape(CLOSE);
 }
 
+void whitehexagon(int x) {
+beginShape();
+vertex(x + 60, 160 - 20*sqrt(3) );
+vertex(x + 20, 160 - 20*sqrt(3) );
+vertex(x + 0, 160 );
+vertex(x + 20, 160 + 20*sqrt(3) );
+vertex(x + 60, 160 + 20*sqrt(3) );
+vertex(x + 80, 160 );
+fill(200);
+endShape(CLOSE);
+}
+
+void lighthexagon(int x) {
+beginShape();
+vertex(x + 60, 170 - 20*sqrt(3) );
+vertex(x + 20, 170 - 20*sqrt(3) );
+vertex(x + 0, 170 );
+vertex(x + 20, 170 + 20*sqrt(3) );
+vertex(x + 60, 170 + 20*sqrt(3) );
+vertex(x + 80, 170 );
+fill(250);
+endShape(CLOSE);
+}
+
 void setup() {
   size(400, 300);
 
@@ -46,5 +70,7 @@ void setup() {
     
    for(int hexpos = 0; hexpos <400; hexpos = hexpos+80){ 
     hexagon(hexpos);
+    whitehexagon(hexpos);
+    lighthexagon(hexpos);
  }
 }
