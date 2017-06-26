@@ -8,7 +8,6 @@
  
 */
 
-
 void picket(int x) {
   beginShape();
   vertex(x, 300);
@@ -42,7 +41,9 @@ void setup() {
   }
   rect(0, 120, 400, 30);
   hexagon(0);
-  
+    
+    background(100);
+    
    for(int hexpos = 0; hexpos <400; hexpos = hexpos+80){ 
     hexagon(hexpos);
  }
