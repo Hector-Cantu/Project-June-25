@@ -197,6 +197,11 @@ for(int smallhexpos = 0; hexpos < 400; smallhexpos = smallhexpos + 20*sqrt(3) ){
  small_white_hexagon13(smallhexpos)
  small_white_hexagon14(smallhexpos)
 }
+/*
+for ( int i = 0; i < 15 ; i = i + 1) {
+}
+Why does this not work?
+*/
 
 /* 
 Here is a nice for loop, it prevents me from transferring the shapes each time
