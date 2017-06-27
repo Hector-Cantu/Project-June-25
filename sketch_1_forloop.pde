@@ -17,6 +17,7 @@ vertex(x, 10);
 fill(255);
 endShape(CLOSE);
 }
+// here are the vertices of a hexagon, note: the fill command fills them up the desired color
 
 void small_white_hexagon2(int x){
 beginShape();
@@ -196,6 +197,12 @@ for(int smallhexpos = 0; hexpos < 400; smallhexpos = smallhexpos + 20*sqrt(3) ){
  small_white_hexagon13(smallhexpos)
  small_white_hexagon14(smallhexpos)
 }
+
+/* 
+Here is a nice for loop, it prevents me from transferring the shapes each time
+However, I wish my code were more effective as it is clear that I still used a lot of copy and pasting
+I plan on asking for help on this tomorrow
+*/
 
 void hexagon(int x) {
 beginShape();
