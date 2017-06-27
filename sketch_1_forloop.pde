@@ -101,14 +101,99 @@ vertex(x, 290);
 fill(0);
 endShape(CLOSE);
 }
+
+void small_black_hexagon1(int x){
+beginShape();
+vertex(x - 10*sqrt(3), 20);
+vertex(x, 10);
+vertex(x + 10*sqrt(3), 20);
+vertex(x + 10*sqrt(3), 40);
+vertex(x, 50);
+vertex(x - 10*sqrt(3), 40);
+fill(237);
+endShape(CLOSE);
+
+void small_black_hexagon3(int x){
+beginShape();
+vertex(x - 10*sqrt(3), 60);
+vertex(x, 50);
+vertex(x + 10*sqrt(3), 60);
+vertex(x + 10*sqrt(3), 80);
+vertex(x, 90);
+vertex(x - 10*sqrt(3), 80);
+fill(200);
+endShape(CLOSE);
+
+void small_black_hexagon5(int x){
+beginShape();
+vertex(x - 10*sqrt(3), 100);
+vertex(x, 90);
+vertex(x + 10*sqrt(3), 100);
+vertex(x + 10*sqrt(3), 120);
+vertex(x, 130);
+vertex(x - 10*sqrt(3), 120);
+fill(163);
+endShape(CLOSE);
+
+void small_black_hexagon7(int x){
+beginShape();
+vertex(x - 10*sqrt(3), 140);
+vertex(x, 130);
+vertex(x + 10*sqrt(3), 140);
+vertex(x + 10*sqrt(3), 160);
+vertex(x, 170);
+vertex(x - 10*sqrt(3), 160);
+fill(127);
+endShape(CLOSE);
+
+void small_black_hexagon9(int x){
+beginShape();
+vertex(x - 10*sqrt(3), 180);
+vertex(x, 170);
+vertex(x + 10*sqrt(3), 180);
+vertex(x + 10*sqrt(3), 200);
+vertex(x, 210);
+vertex(x - 10*sqrt(3), 200);
+fill(91);
+endShape(CLOSE);
+
+void small_black_hexagon11(int x){
+beginShape();
+vertex(x - 10*sqrt(3), 220);
+vertex(x, 210);
+vertex(x + 10*sqrt(3), 220);
+vertex(x + 10*sqrt(3), 240);
+vertex(x, 250);
+vertex(x - 10*sqrt(3), 240);
+fill(54);
+endShape(CLOSE);
+
+void small_black_hexagon13(int x){
+beginShape();
+vertex(x - 10*sqrt(3), 260);
+vertex(x, 250);
+vertex(x + 10*sqrt(3), 260);
+vertex(x + 10*sqrt(3), 280);
+vertex(x, 290);
+vertex(x - 10*sqrt(3), 280);
+fill(18);
+endShape(CLOSE);
+
 for(int smallhexpos = 0; hexpos < 400; smallhexpos = smallhexpos + 20*sqrt(3) ){
  small_white_hexagon(smallhexpos)
+ small_white_hexagon1(smallhexpos)
  small_white_hexagon2(smallhexpos)
+ small_white_hexagon3(smallhexpos)
  small_white_hexagon4(smallhexpos)
+ small_white_hexagon5(smallhexpos)
  small_white_hexagon6(smallhexpos)
+ small_white_hexagon7(smallhexpos)
  small_white_hexagon8(smallhexpos)
+ small_white_hexagon9(smallhexpos)
  small_white_hexagon10(smallhexpos)
+ small_white_hexagon11(smallhexpos)
  small_white_hexagon12(smallhexpos)
+ small_white_hexagon13(smallhexpos)
  small_white_hexagon14(smallhexpos)
 }
 
@@ -160,7 +245,6 @@ void setup() {
   rect(0, 120, 400, 30);
   hexagon(0);
     
-    background(100);
     
    for(int hexpos = 0; hexpos <400; hexpos = hexpos+80){ 
     hexagon(hexpos);
